@@ -14,7 +14,7 @@ using Microsoft.Extensions.FileSystemGlobbing.Internal.Patterns;
 using HouseRentingSystem.Services.Rents;
 
 var builder = WebApplication.CreateBuilder(args);
-
+//niki test for auto integration
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<HouseRentingSystem.Services.Data.HouseRentingDbContext>(options =>
     options.UseSqlServer(connectionString));
